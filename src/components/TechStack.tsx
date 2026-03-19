@@ -20,7 +20,7 @@ const imageUrls = [
   "/images/dart2.png",
   "/images/dart.png",
   "/images/html_css.png",
-  "/images/flutter.png",
+  "/images/flutter2.png",
 ];
 const textures = imageUrls.map((url) => textureLoader.load(url));
 

@@ -340,17 +340,6 @@
     margin-left: 0px;
     height: 450px;
   }
-  .what-content h5,
-  .what-content-flex {
-    opacity: 0;
-    transition: 0.3s;
-  }
-  .what-noTouch:hover h5,
-  .what-content-active h5,
-  .what-noTouch:hover .what-content-flex,
-  .what-content-active .what-content-flex {
-    opacity: 1;
-  }
   .what-content {
     padding: 30px;
   }

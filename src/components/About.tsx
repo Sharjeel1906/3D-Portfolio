@@ -6,19 +6,17 @@ const About = () => {
       <div className="about-me">
         <h3 className="title">About Me</h3>
         <p className="para">
-          I&apos;m Sharjeel Ahmed, a Software Engineering student at the
-          University of Karachi, focused on building reliable backend systems
-          and modern mobile applications. I enjoy designing solutions that are
-          fast, secure, and scalable—whether it&apos;s an API, an automation
-          script, or a full product.
-        </p>
-        <p className="para">
-          My core skills include Python (Django &amp; Flask), Flutter, web
-          scraping, automation, and SQL databases such as SQLite and MySQL. I
-          blend backend logic with clean Flutter UIs to create end-to-end
-          experiences, and I&apos;m constantly learning—especially around AI,
-          data analysis, and best practices that keep code maintainable and
-          production-ready.
+          A driven second-year Bachelor of Science in Software Engineering
+          (BSSE) student at the University of Karachi, with a strong foundation
+          in software engineering principles and hands-on experience in
+          cross-platform application development using Flutter and backend
+          development with Python. Skilled in designing and integrating
+          full-stack solutions, focusing on clean architecture, maintainability,
+          and real-world usability. Adept at problem-solving, disciplined
+          learning, and delivering reliable software solutions. Committed to
+          continuous professional growth and creating efficient, scalable, and
+          impactful technology solutions that combine modern frontend interfaces
+          with robust Python-powered backends.
         </p>
       </div>
     </div>

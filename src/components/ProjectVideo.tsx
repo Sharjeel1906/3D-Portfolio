@@ -47,66 +47,58 @@ const ProjectVideo = () => {
   }, [setIsLoading]);
 
   const project = name ? projectVideos[name] : undefined;
-
-  if (!project) {
-    return (
-      <div className="work-section section-container">
-        <div className="work-container">
-          <h2>Project not found</h2>
-          <button
-            className="carousel-arrow"
-            onClick={() => navigate("/")}
-            data-cursor="disable"
-          >
-            Go back
-          </button>
-        </div>
-      </div>
-    );
-  }
+  const title = project?.title ?? "Project not found";
 
   return (
     <div className="video-page-container">
-      <div className="work-section section-container">
-        <div className="work-container">
-          <div className="video-header">
-            <button
-              className="video-back-btn"
-              onClick={() => navigate("/")}
-              data-cursor="disable"
-              title="Go back"
-            >
-              ←
-            </button>
-            <div className="video-title-wrapper">
-              <h2>
-                {project.title} <span>Demo</span>
-              </h2>
-            </div>
+      <div className="video-page-inner">
+        <header className="video-header">
+          <div className="video-header-text">
+            <h1 className="video-main-title">{title}</h1>
+            <p className="video-subtitle">
+              {project
+                ? "Watch a focused walkthrough of this project, its flow, and key features."
+                : "We couldn't find this project, but you can return to the main list."}
+            </p>
           </div>
+        </header>
 
-          <div className="video-content">
-            <div className="video-info">
-              <div className="video-info-card">
-                <h4>{project.title}</h4>
-                <p>Project walkthrough video preview</p>
+        <main className="video-layout">
+          <section className="video-primary">
+            {project ? (
+              <div className="video-player-wrapper">
+                <video
+                  src={`/videos/${project.video}`}
+                  controls
+                  autoPlay
+                  className="project-video-player"
+                />
               </div>
-              <div className="video-info-card">
-                <h4>About</h4>
-                <p>Watch this detailed demo to see the project in action and understand its features and functionality.</p>
+            ) : (
+              <div className="video-missing">
+                <p>This project video is not available.</p>
               </div>
-            </div>
+            )}
+          </section>
 
-            <div className="video-player-wrapper">
-              <video
-                src={`/videos/${project.video}`}
-                controls
-                autoPlay
-                className="project-video-player"
-              />
+          <aside className="video-sidebar">
+            <div className="video-info-card">
+              <h4>Overview</h4>
+              <p>
+                {project
+                  ? `${project.title} is one of my portfolio projects. This video gives you a quick sense of the experience without installing anything.`
+                  : "Use the back button to return and choose another project."}
+              </p>
             </div>
-          </div>
-        </div>
+            <div className="video-info-card">
+              <h4>How to use this demo</h4>
+              <p>
+                Play the video to see the full user flow, key screens, and main
+                interactions. Pause anytime to inspect specific details.
+              </p>
+            </div>
+          </aside>
+        </main>
       </div>
     </div>
   );

@@ -18,7 +18,7 @@ const Contact = () => {
               </a>
             </p>
             <h4>Phone</h4>
-            <p>03121198483</p>
+            <p>+92 3121198483</p>
             <h4>Location</h4>
             <p>FB Area Block 18, Karachi, Pakistan</p>
           </div>
