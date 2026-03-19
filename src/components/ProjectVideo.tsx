@@ -1,4 +1,4 @@
-import { useNavigate, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { useEffect } from "react";
 import "./styles/Work.css";
 import { useLoading } from "../context/LoadingProvider";
@@ -39,7 +39,6 @@ const projectVideos: Record<
 
 const ProjectVideo = () => {
   const { name } = useParams<{ name: string }>();
-  const navigate = useNavigate();
   const { setIsLoading } = useLoading();
 
   useEffect(() => {
