@@ -27,6 +27,20 @@ const Certifications = () => {
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
+                <h4>Effective Leadership</h4>
+                <h5>HP</h5>
+              </div>
+              <h3>2026</h3>
+            </div>
+            <p>
+              Leadership fundamentals including team communication, decision
+              making, conflict resolution, and motivating teams to deliver
+              results in professional environments.
+            </p>
+          </div>
+          <div className="career-info-box">
+            <div className="career-info-in">
+              <div className="career-role">
                 <h4>UX Design</h4>
                 <h5>Google</h5>
               </div>
