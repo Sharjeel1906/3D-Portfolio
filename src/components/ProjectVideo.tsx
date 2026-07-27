@@ -7,9 +7,9 @@ const projectVideos: Record<
   string,
   { title: string; video: string; description?: string }
 > = {
-  devpartner: {
-    title: "DevPartner",
-    video: "devpartner.mp4",
+  data_entry: {
+    title: "Automated Data Entry",
+    video: "automated data entry.mp4",
   },
   text_description: {
     title: "Image Description",
@@ -35,6 +35,10 @@ const projectVideos: Record<
     title: "BillSpot",
     video: "billspot.mp4",
   },
+  devpartner:{
+    title:"dEVPartner",
+    video:"devpartner.mp4",
+  }
 };
 
 const ProjectVideo = () => {

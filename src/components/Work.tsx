@@ -5,11 +5,12 @@ import { MdArrowBack, MdArrowForward } from "react-icons/md";
 
 const projects = [
   {
-    title: "DevPartner",
-    category: "Full-Stack Development",
-    tools: "Python, Flask, React, APIs",
-    image: "/images/devpartner.png",
-    slug: "devpartner",
+    title: "Blog Website",
+    category: "Web Backend Development",
+    tools: "Python, Flask, SQL, HTML/CSS",
+    image: "/images/blog.png",
+    slug: "blog",
+    liveUrl: "http://SharjeelAhmed20.pythonanywhere.com",
   },
   {
     title: "Spotify Billboard Automation App",
@@ -17,28 +18,6 @@ const projects = [
     tools: "Python, Selenium, Web Scraping, APIs",
     image: "/images/billspot.png",
     slug: "billspot",
-  },
-  {
-    title: "AI Chat App",
-    category: "AI Solutions",
-    tools: "Python, OpenAI/Gemini, APIs",
-    image: "/images/ai_chat_app.png",
-    slug: "ai_chat_app",
-  },
-  {
-    title: "E-Commerce App",
-    category: "Web Backend Development",
-    tools: "Python, Flask/Django, SQL, APIs",
-    image: "/images/ecommerce.png",
-    slug: "ecommerce",
-  },
-  {
-    title: "Blog Website",
-    category: "Web Backend Development",
-    tools: "Python, Flask, SQL, HTML/CSS",
-    image: "/images/blog.png",
-    slug: "blog",
-    liveUrl: "http://SharjeelAhmed20.pythonanywhere.com",
   },
   {
     title: "Stacky Trends",
@@ -56,6 +35,20 @@ const projects = [
     liveUrl: "https://cafe12.pythonanywhere.com/",
   },
   {
+    title: "AI Chat App",
+    category: "AI Solutions",
+    tools: "Python, OpenAI/Gemini, APIs",
+    image: "/images/ai_chat_app.png",
+    slug: "ai_chat_app",
+  },
+  {
+    title: "Automated Data Entry",
+    category: "Process Automation",
+    tools: "Python, Selenium, Automation",
+    image: "/images/auto-data.jpeg",
+    slug: "data_entry",
+  },
+  {
     title: "Image Description",
     category: "AI & Computer Vision",
     tools: "Python, AI Models, APIs",
@@ -68,6 +61,20 @@ const projects = [
     tools: "Python, REST APIs, Data Fetching",
     image: "/images/movie_info.png",
     slug: "movie_info",
+  },
+  {
+    title: "E-Commerce App",
+    category: "Web Backend Development",
+    tools: "Python, Flask/Django, SQL, APIs",
+    image: "/images/ecommerce.png",
+    slug: "ecommerce",
+  },
+  {
+    title: "dEVPartner App",
+    category: "Flutter Development",
+    tools: "Python, Flask/Django,Postgree SQL, APIs,Flutter",
+    image: "/images/devpartner.png",
+    slug: "devpartner",
   },
 ];
 
